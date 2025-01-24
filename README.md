@@ -37,8 +37,8 @@ Flask-CORS: To handle cross-origin requests.
 Contributing:
 Contributions are welcome! Feel free to open issues or submit pull requests to improve the project.
 
-Contact
-For questions or feedback, please contact:
+Contact 
+For question or feedback, please contact:
 
 Email: ahmedbahadir.demir@gmail.com
 GitHub: bhdrdemir
