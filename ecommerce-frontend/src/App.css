@@ -1,0 +1,270 @@
+/* Genel Ayarlar */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #181C14;
+  color: #ECDFCC;
+  height: 100vh;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.guide-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3E5879;
+  color: #ECDFCC;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.guide-button:hover {
+  background-color: #697565;
+}
+
+.guide-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3E5879;
+  color: #ECDFCC;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.guide-button:hover {
+  background-color: #697565;
+}
+
+.guide-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.guide-content {
+  background-color: #213555;
+  color: #ECDFCC;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.guide-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.guide-content p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.result-section {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.results {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.result-item {
+  margin-bottom: 15px;
+}
+
+.result-item ul {
+  margin-left: 20px;
+}
+
+.highlight {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+}
+
+
+.left-panel {
+  height: 100%;
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #213555;
+  border-right: 2px solid #3E5879;
+}
+
+.left-panel h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ECDFCC;
+}
+
+.left-panel h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #D8C4B6;
+}
+
+.left-panel input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #3C3D37;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #3C3D37;
+  color: #ECDFCC;
+}
+
+.left-panel button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #F5EFE7;
+  background-color: #697565;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.left-panel button:hover {
+  background-color: #D8C4B6;
+  color: #181C14;
+}
+
+
+.right-panel {
+  height: 100%;
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #3E5879;
+}
+
+.right-panel h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #F5EFE7;
+}
+
+.right-panel pre {
+  background-color: #213555;
+  padding: 15px;
+  border: 1px solid #3E5879;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #ECDFCC;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.file-upload {
+  margin-top: 20px;
+  padding: 12px;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  text-align: center;
+  color: #ccc;
+  background-color: #3C3D37;
+  transition: border-color 0.3s ease;
+}
+
+.file-upload:hover {
+  border-color: #646cff;
+}
+
+.file-upload input[type="file"] {
+  display: none;
+}
+
+.file-upload label {
+  cursor: pointer;
+  color: #ECDFCC;
+  font-size: 16px;
+}
+
+input {
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+button {
+  background-color: #697565;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #D8C4B6;
+  color: #213555;
+}
+
+/* Mobil Uyum */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-panel, .right-panel {
+    flex: none;
+    width: 100%;
+  }
+}
